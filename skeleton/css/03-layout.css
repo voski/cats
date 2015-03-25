@@ -1,1 +1,37 @@
 /* PHASE 3: Layout */
+.content {
+  margin-top: 40px;
+  width: 900px;
+  margin: auto;
+  border: 1px solid #ccc;
+  position: relative;
+}
+.content-sidebar, .content-main {
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  padding: 20px;
+  height: auto;
+  min-height: 200px;
+}
+.content-sidebar {
+  width: 199.5px;
+  float: left;
+  border-right: none;
+}
+.content-main {
+  width: 619.5px;
+  float: left;
+  left:239.5px;
+
+}
+.content:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  left: 239.5px;
+  top: 0;
+  bottom: 0;
+  background-color: #ccc;
+}
